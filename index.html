@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABAR</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <script src="js/index.js"></script>
+     <!-- Title -->
+    <h1 class="maintitle">MABAR</h1>
+    <h3 class="secondtitle">(MARI BELAJAR BANGUN DATAR)</h3>
+    <p class="subtitle">MABAR atau MARI BELAJAR BANGUN DATAR. MABAR adalah sebuah web-apps sederhana untuk mempelajari bangun datar 
+        dan juga elemennya seperti Luas dan Keliling dari masing-masing bangun datar.</p>
+    <!-- Header / Navbar -->
+    <header>
+        <nav>
+            <div = class="menu">
+            <a href="#triangle" class="menu-triangle">Segitiga</a>
+            <a href="#parallelogram" class="menu-parallelogram">Jajargenjang</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Page -->
+    <main>
+        <section id="triangle">
+            <div class="card">
+                <div>
+                    <h2>Luas Segitiga</h2>
+                </div>
+                <img src="assets/segitiga.png">
+                <div>
+                    <h4>Rumus Luas Segitiga</h4>
+                    <p>L = 1/2 X a X t</p>
+                </div>
+                <div>
+                    <p>dimana</p>
+                    <p>L adalah luas dari segitiga</p>
+                    <p>a adalah panjang alas dari segitiga</p>
+                    <p>t adalah tinggi dari segitiga</p>
+                </div>
+                <div id="luassegitiga">
+                    <h1>Hitung Luas Segitiga</h1>
+                    <form action="" class="form-triangle">
+                        <label>Alas segitiga</label>
+                        <input id="alassegitiga" type="number">
+                        <label>Tinggi segitiga</label>
+                        <input id="tinggisegitiga" type="number">
+                        <button type="button"
+                                class="button-triangle"
+                                onclick="calculateLuasSegitiga()">
+                                Hitung
+                        </button>
+                        <label>Luas segitiga</label>
+                        <input id="inputluassegitiga"></input>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2>Keliling Segitiga</h2>
+                </div>
+                <img src="assets/segitiga.png">
+                <div>
+                    <h4>Rumus Keliling Segitiga</h4>
+                    <p>L = a + b + c </p>
+                </div>
+                <div>
+                    <p>dimana</p>
+                    <p>K adalah keliling dari segitiga</p>
+                    <p>a adalah sisi 1 dari segitiga</p>
+                    <p>b adalah sisi 2 dari segitiga</p>
+                    <p>c adalah sisi 3 dari segitiga</p>
+                </div>
+                <div id="kelilingsegitiga">
+                    <h1>Hitung Keliling Segitiga</h1>
+                    <form action="" class="form-triangle">
+                        <label>sisi a</label>
+                        <input id="a-segitiga" type="number">
+                        <label >sisi b</label>
+                        <input id="b-segitiga" type="number">
+                        <label>sisi c</label>
+                        <input id="c-segitiga" type="number">
+                        <button type="button"
+                                class="button-triangle"
+                                onclick="calculateKelilingSegitiga()">
+                                Hitung
+                        </button>
+                        <label id="label">Keliling Segitiga</label>
+                        <input id="inputkelilingsegitiga"></input>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section id="parallelogram">
+            <div class="card">
+                <div>
+                    <h2>Luas Jajargenjang</h2>
+                </div>
+                <img src="assets/jajargenjang.png">
+                <div>
+                    <h4>Rumus Luas Jajargenjang</h4>
+                    <p>L = a X t</p>
+                </div>
+                <div>
+                    <p>dimana</p>
+                    <p>L adalah luas dari jajargenjang</p>
+                    <p>a adalah panjang alas dari jajargenjang</p>
+                    <p>t adalah tinggi dari jajargenjang</p>
+                </div>
+                <div id="luasjajargenjang">
+                    <h1>Hitung Luas Jajargenjang</h1>
+                    <form action="" class="form-parallelogram">
+                        <label>Alas jajargenjang</label>
+                        <input id="alasjajargenjang" type="number">
+                        <label>Tinggi jajargenjang</label>
+                        <input id="tinggijajargenjang" type="number">
+                        <button type="button"
+                                class="button-parallelogram"
+                                onclick="calculateLuasJajargenjang()">
+                                Hitung
+                        </button>
+                        <label>Luas jajargenjang</label>
+                        <input id="inputluasjajargenjang"></input>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2>Keliling Jajargenjang</h2>
+                </div>
+                <img src="assets/jajargenjang.png">
+                <div>
+                    <h4>Rumus Keliling Jajargenjang</h4>
+                    <p>L = 2(a + b)</p>
+                </div>
+                <div>
+                    <p>dimana</p>
+                    <p>K adalah keliling dari jajargenjang</p>
+                    <p>a adalah sisi 1 atau sisi mendatar dari jajargenjang</p>
+                    <p>b adalah sisi 2 atau sisi miring dari jajargenjang</p>
+                </div>
+                <div id="kelilingjajargenjang">
+                    <h1>Hitung Keliling Jajargenjang</h1>
+                    <form action="" class="form-parallelogram">
+                        <label>sisi a</label>
+                        <input id="a-jajargenjang" type="number">
+                        <label >sisi b</label>
+                        <input id="b-jajargenjang" type="number">
+                        <button type="button"
+                                class="button-parallelogram"
+                                onclick="calculateKelilingJajargenjang()">
+                                Hitung
+                        </button>
+                        <label>Keliling Jajargenjang</label>
+                        <input id="inputkelilingjajargenjang"></input>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>Copyright 2023: Agus Rahmat A</footer>
+</body>
+</html>
