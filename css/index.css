@@ -19,7 +19,6 @@ body{
 }
 
 .secondtitle{
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -35,7 +34,7 @@ body{
 }
 .menu > a:hover{
     text-decoration: none;
-    background-color: greenyellow;
+    background-color: aquamarine;
 }
 .menu-triangle{
     text-decoration: none;
@@ -73,32 +72,40 @@ main{
     box-shadow: 0px 14px 5px -7px rgba(0,0,0,0.3);
 }
 
-#label{
-
+.label{
+    text-align: center;
 }
 
 /*Main Content: Segitiga */
 .form-triangle{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    justify-items: start;
+    align-items: initial;
     gap: 10px;
 }
 .form-triangle > input{
     padding: 8px 4px;
     border-radius: 6px;
     width: 50%;
-    justify-content: center;
+    justify-content: start;
+    justify-items: start;
     align-content: center;
 }
 
 .button-triangle{
-    padding: 6px 8px;
+    padding: 10px 10px;
     background-color: blue;
     color: white;
     border: none;
     border-radius: 6px;
+    width: 50%;
+}
+
+.button-triangle:hover{
+    background-color: aquamarine;
+    cursor: pointer;
 }
 
 /*Main Content: Jajargenjang*/
@@ -115,22 +122,57 @@ main{
 .form-parallelogram{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    justify-items: start;
+    align-items: initial;
     gap: 10px;
 }
 .form-parallelogram > input{
     padding: 8px 4px;
     border-radius: 6px;
     width: 50%;
-    justify-content: center;
+    justify-content: start;
+    justify-items: start;
     align-content: center;
 }
 
 .button-parallelogram{
-    padding: 6px 8px;
+    padding: 10px 10px;
     background-color: blue;
     color: white;
     border: none;
     border-radius: 6px;
+    width: 50%;
 }
+
+.button-parallelogram:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+/* Style Responsive */
+/* Phone */
+@media only screen and (max-width: 600px) {}
+
+/* Tablet (Potrait) */
+@media only screen and (min-width: 600px) {}
+
+/* Tablet (Landscape) */
+@media only screen and (min-width: 768px) {
+    .responsive-img {
+        max-width: 50%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {}
+
+/* Huge */
+@media only screen and (min-width: 1280px) {} 
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
