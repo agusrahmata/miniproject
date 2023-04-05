@@ -1,6 +1,6 @@
 //javascript
 
-//menghitung luas segitiga
+//Perhitungan luas segitiga
 function calculateLuasSegitiga (){
     const alassegitiga = document.getElementById("alassegitiga").value;
     const tinggisegitiga = document.getElementById("tinggisegitiga").value;
@@ -8,7 +8,7 @@ function calculateLuasSegitiga (){
     document.getElementById("inputluassegitiga").value = answer;
 }
 
-//menghitung keliling segitiga
+//Perhitungan keliling segitiga
 function calculateKelilingSegitiga (){
     const asegitiga = document.getElementById("a-segitiga").value;
     const bsegitiga = document.getElementById("b-segitiga").value;
@@ -17,7 +17,7 @@ function calculateKelilingSegitiga (){
     document.getElementById("inputkelilingsegitiga").value = answer;
 }
 
-//menghitung luas jajargenjang
+//Perhitungan luas jajargenjang
 function calculateLuasJajargenjang (){
     const alasjajargenjang = document.getElementById("alasjajargenjang").value;
     const tinggijajargenjang = document.getElementById("tinggijajargenjang").value;
@@ -25,7 +25,7 @@ function calculateLuasJajargenjang (){
     document.getElementById("inputluasjajargenjang").value = answer;
 }
 
-//menghitung keliling jajargenjang
+//Perhitungan keliling jajargenjang
 function calculateKelilingJajargenjang (){
     const ajajargenjang = document.getElementById("a-jajargenjang").value;
     const bjajargenjang = document.getElementById("b-jajargenjang").value;
