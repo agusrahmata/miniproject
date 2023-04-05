@@ -18,24 +18,31 @@ body{
     text-align: center;
 }
 
+/* Judul kecil */
 .secondtitle{
     text-align: center;
 }
 
+/* Subtitle untuk paragraf informasi web atau keterangan web */
 .subtitle{
     margin: 10px 0px;
     text-align: center;
 }
 
+/* Menu atau navigasi */
 .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* Membuat menu navbar menjadi responsif ketika hovering pointer diarea tersebut */
 .menu > a:hover{
     text-decoration: none;
     background-color: aquamarine;
 }
+
+/* Membuat tampilan untuk navbar Segitiga  */
 .menu-triangle{
     text-decoration: none;
     background-color: blue;
@@ -47,17 +54,6 @@ body{
     margin-bottom: 10px;
 }
 
-.menu-paralellogram{
-    margin-top: 10px;
-    text-decoration: none;
-    background-color: blue;
-    color: white;
-    padding: 10px 0px;
-    width: 100%;
-    text-align: center;
-    border-radius: 4px;
-}
-
 /*Main Content*/
 main{
     margin-top: 20px;
@@ -66,17 +62,20 @@ main{
     gap: 60px;
 }
 
+/* Membuat class card yang diaplikasikan untuk masing-masing Luas Segitiga, Keliling Segitiga,
+Luas Jajargenjang, dan Keliling Jajargenjang */
 .card{
     border: 1px blue solid;
     padding: 20px;
     box-shadow: 0px 14px 5px -7px rgba(0,0,0,0.3);
 }
-
+/* Membuat class untuk setiap title (judul) menjadi di tengah di masing-masing Luas Segitiga,
+Keliling Segitiga, Luas Jajargenjang, dan Keliling Jajargenjang */
 .label{
     text-align: center;
 }
 
-/*Main Content: Segitiga */
+/*Konten Segitiga */
 .form-triangle{
     display: flex;
     flex-direction: column;
@@ -85,6 +84,8 @@ main{
     align-items: initial;
     gap: 10px;
 }
+
+/* Konten Segitiga untuk input */
 .form-triangle > input{
     padding: 8px 4px;
     border-radius: 6px;
@@ -94,6 +95,7 @@ main{
     align-content: center;
 }
 
+/* Konten Segitiga untuk tombol Hitung */
 .button-triangle{
     padding: 10px 10px;
     background-color: blue;
@@ -103,12 +105,13 @@ main{
     width: 50%;
 }
 
+/* Membuat tombol Hitung di Segitiga menjadi responsif ketika hovering pointer diarea tersebut*/
 .button-triangle:hover{
     background-color: aquamarine;
     cursor: pointer;
 }
 
-/*Main Content: Jajargenjang*/
+/* Membuat tampilan untuk navbar Jajargenjang  */
 .menu-parallelogram{
     text-decoration: none;
     background-color: blue;
@@ -119,6 +122,7 @@ main{
     border-radius: 4px;
 }
 
+/*Konten Jajargenjang*/
 .form-parallelogram{
     display: flex;
     flex-direction: column;
@@ -127,6 +131,7 @@ main{
     align-items: initial;
     gap: 10px;
 }
+/* Konten Jajargenjang untuk input */
 .form-parallelogram > input{
     padding: 8px 4px;
     border-radius: 6px;
@@ -136,6 +141,7 @@ main{
     align-content: center;
 }
 
+/* Konten Jajargenjang untuk tombol Hitung */
 .button-parallelogram{
     padding: 10px 10px;
     background-color: blue;
@@ -145,31 +151,32 @@ main{
     width: 50%;
 }
 
+/* Membuat tombol Hitung di Jajrgenjang menjadi responsif ketika hovering pointer diarea tersebut */
 .button-parallelogram:hover{
     background-color: aquamarine;
     cursor: pointer;
 }
 
-/* Style Responsive */
-/* Phone */
+/* Style Responsive Phone */
 @media only screen and (max-width: 600px) {}
 
-/* Tablet (Potrait) */
+/* Style Responsive Tablet (Potrait) */
 @media only screen and (min-width: 600px) {}
 
-/* Tablet (Landscape) */
+/* Style Responsive Tablet (Landscape) */
 @media only screen and (min-width: 768px) {
     .responsive-img {
         max-width: 50%;
     }
 }
 
-/* Desktop */
+/* Style Responsive Desktop */
 @media only screen and (min-width: 992px) {}
 
-/* Huge */
+/* Style Responsive Huge Screen */
 @media only screen and (min-width: 1280px) {} 
 
+/* Membuat gambar menjadi responsif */
 .responsive-img {
     max-width: 100%;
     height: auto;
